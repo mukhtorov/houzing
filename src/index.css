@@ -16,4 +16,7 @@ body {
 
   /* background */
   --backgroundPrimary: #0061df;
+
+  /* padding */
+  --padding: 0 130px;
 }
