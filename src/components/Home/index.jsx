@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Button } from '../Generic';
+import { Input } from '../Generic';
 import { Container } from './style';
 
 export const Home = () => {
