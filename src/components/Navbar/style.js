@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   font-size: 16px;
 
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 `;
 
 const Section = styled.div`

@@ -7,6 +7,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,4 +20,26 @@ body {
 
   /* padding */
   --padding: 0 130px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  /* text/1 */
+
+  color: #0d263b;
+}
+.subTitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: #0d263b;
 }
