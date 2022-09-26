@@ -41,6 +41,20 @@ body {
   font-weight: 600;
   font-size: 16px;
 
-  /* color: #0d263b; */
-  color: white;
+  color: #0d263b;
+}
+
+.info {
+  /* Paragraph/Small/Regular */
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Text / Color */
+
+  color: #696969;
 }
