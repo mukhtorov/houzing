@@ -9,6 +9,9 @@ const Container = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
 `;
 
 const Icons = styled.div``;

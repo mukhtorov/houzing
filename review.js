@@ -8,7 +8,11 @@
 
 // 2-dars
 // ➤ Netlify auto deploy via github branch
-// ➤ Generic Button, Input
+// ➤ Generic components yasash -> Button, Input
+// ➤ Signin Singup pages
+// ➤ Hidden page larni routeda konfiguratsiya qilish
+// ➤ Filter menu
+// ➤ Antd orqali dropdown menu yasash
 // ➤ forwardRef()
 
 // 3-dars
@@ -18,3 +22,10 @@
 // https
 // costum hooks
 // useHttps
+
+// BUG FIX
+// 1440px bug fixed
+// Carousel height fixed
+// lazy load
+// place to center
+// Change flex to grid

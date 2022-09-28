@@ -11,6 +11,7 @@ export const HouseCard = ({ data = {} }) => {
     city,
     country,
     description,
+    category,
   } = data;
   return (
     <Container>
@@ -19,7 +20,10 @@ export const HouseCard = ({ data = {} }) => {
         <div className='subTitle inline'>
           {city}, {country}, {description}
         </div>
-        <div className='info'>{address || 'Quincy St, Brooklyn, NY, USA'}</div>
+        <div className='info'>
+          {address || 'Quincy St, Brooklyn, NY, USA'} -{' '}
+          {category?.name || 'Category'}
+        </div>
         <Details>
           <Details.Item>
             <Icons.Bed />
