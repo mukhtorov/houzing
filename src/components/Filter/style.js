@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ReactComponent as houses } from '../../assets/icons/houses.svg';
 import { ReactComponent as filter } from '../../assets/icons/setting.svg';
 import { ReactComponent as search } from '../../assets/icons/search.svg';
+import { Select } from 'antd';
 
 const Container = styled.div`
   display: flex;
@@ -38,4 +39,17 @@ const Section = styled.div`
   margin-bottom: 20px;
 `;
 
-export { Container, Icons, MenuWrapper, Section };
+const SelectAnt = styled(Select)`
+  min-width: 200px;
+  width: 100%;
+  max-width: 200px;
+  .ant-select-selector {
+    height: 44px !important;
+  }
+  .ant-select-selection-item {
+    display: flex !important;
+    align-items: center !important;
+  }
+`;
+
+export { Container, Icons, MenuWrapper, Section, SelectAnt };

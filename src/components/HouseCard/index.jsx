@@ -22,7 +22,7 @@ export const HouseCard = ({ data = {} }) => {
         </div>
         <div className='info'>
           {address || 'Quincy St, Brooklyn, NY, USA'} -{' '}
-          {category?.name || 'Category'}
+          {category?.name || 'Category'} {houseDetails?.room || 0}-rooms
         </div>
         <Details>
           <Details.Item>

@@ -64,3 +64,9 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 25px !important;
+}
