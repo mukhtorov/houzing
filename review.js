@@ -17,6 +17,8 @@
 
 // 3-dars
 // ➤ Carousel
+// ➤ Generic House Card
+//
 
 // 4-dars
 // https
