@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Content } from './style';
-import HouseCard from '../HouseCard';
-import Slider from 'react-slick';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Container, Content } from "./style";
+import HouseCard from "../HouseCard";
+import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 
 const { REACT_APP_BASE_URL: url } = process.env;
 
 const settings = {
-  className: 'center',
+  className: "center",
   centerMode: true,
   infinite: true,
-  centerPadding: '25px',
+  centerPadding: "25px",
   slidesToShow: 3,
   speed: 500,
   arrows: true,
@@ -34,8 +34,8 @@ export const Recommended = () => {
   return (
     <Container>
       <Content>
-        <h1 className='title'>Recent Properties for Rent</h1>
-        <div className='info'>
+        <h1 className="title">Recent Properties for Rent</h1>
+        <div className="info">
           Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
         </div>
       </Content>
@@ -43,8 +43,9 @@ export const Recommended = () => {
         {data.map((value) => {
           return (
             <HouseCard
+              key={value.id}
               gap={10}
-              onClick={() => navigate(`/properties?category_id=${value.id}`)}
+              onClick={() => navigate(`/properties/${value.id}`)}
               data={value}
             />
           );

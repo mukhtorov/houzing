@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Content } from './style';
-import CategoryCard from '../CategoryCard';
-import Slider from 'react-slick';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Container, Content } from "./style";
+import CategoryCard from "../CategoryCard";
+import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 
 const { REACT_APP_BASE_URL: url } = process.env;
 
 const settings = {
-  className: 'center',
+  className: "center",
   centerMode: true,
   infinite: true,
-  centerPadding: '25px',
+  centerPadding: "25px",
   slidesToShow: 3,
   speed: 500,
   arrows: true,
@@ -35,8 +35,8 @@ export const GenCarousel = () => {
   return (
     <Container>
       <Content>
-        <h1 className='title'>Category</h1>
-        <div className='info'>
+        <h1 className="title">Category</h1>
+        <div className="info">
           Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
         </div>
       </Content>
@@ -44,6 +44,7 @@ export const GenCarousel = () => {
         {data.map((value) => {
           return (
             <CategoryCard
+              key={value.id}
               onClick={() => navigate(`/properties?category_id=${value.id}`)}
               data={value}
             />

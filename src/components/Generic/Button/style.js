@@ -30,6 +30,12 @@ const getType = ({ type }) => {
   }
 };
 
+const getWidth = ({ width }) => {
+  if (!width) return '130px';
+  else if (`${width}`.includes('%')) return '100%';
+  else return `${width}px`;
+};
+
 const Container = styled.button`
   display: flex;
   justify-content: center;
@@ -39,7 +45,7 @@ const Container = styled.button`
 
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '14px')};
   height: ${({ height }) => (height ? `${height}px` : '44px')};
-  width: ${({ width }) => (width ? `${width}px` : '130px')};
+  width: ${getWidth};
 
   cursor: pointer;
   ${getType}

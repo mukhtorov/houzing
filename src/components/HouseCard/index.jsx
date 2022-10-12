@@ -1,7 +1,7 @@
 import { Container, Content, Details, Img, Icons, Divider } from './style';
 import noimg from '../../assets/img/noimg.jpeg';
 
-export const HouseCard = ({ data = {}, gap }) => {
+export const HouseCard = ({ data = {}, gap, onClick }) => {
   const {
     attachments,
     salePrice,
@@ -14,7 +14,7 @@ export const HouseCard = ({ data = {}, gap }) => {
     category,
   } = data;
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex' }} onClick={onClick}>
       <Container gap={gap}>
         <Img src={(attachments && attachments[0]?.imgPath) || noimg} />
         <Content>

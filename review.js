@@ -21,13 +21,43 @@
 //
 
 // 4-dars
-// https
-// costum hooks
-// useHttps
+// ➤ Netlify, redirect bug fixed
+// ➤ Swagger haqida tushuncha
+// ➤ Swagger vs Postman
+// ➤ .env file
+// ➤ costum hooks - useReplace() , useSearch()
+// ➤ new URL()
+// ➤ new URLsearchParams()
+// ➤ Filter Globally
 
-// BUG FIX
-// 1440px bug fixed
-// Carousel height fixed
-// lazy load
-// place to center
-// Change flex to grid
+// 5-dars
+// ➤ BUG FIX
+// ➤ 1440px bug fixed
+// ➤ Carousel height fixed
+// ➤ lazy load
+// ➤ place to center
+// ➤ Change flex to grid
+
+//
+
+// 7-dars
+// fix private rou te
+// ➤ formik
+// ➤ yup
+
+// 10-dars
+// Deploy
+// Image gallery
+
+// BUGS
+// house card height
+// private route in custom hooks
+// useRequest -> post error
+// Yandex map -> Placemarker
+
+// Feature
+// Private Route & useRequest
+// Register
+// Favourites
+// Edit house
+// Add house
