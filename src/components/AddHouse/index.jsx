@@ -36,14 +36,14 @@ export const AddNewHouse = () => {
         setImgs(res?.data?.attachments);
         setInitail({ ...res?.data });
       });
-  }, []);
+  }, [id, request]);
 
   // category
   useEffect(() => {
     request({ url: `/categories/list` }).then((res) =>
       setCategory(res?.data || [])
     );
-  }, []);
+  }, [request]);
 
   const formik = useFormik({
     initialValues: initial,
