@@ -18,7 +18,6 @@
 // 3-dars
 // ➤ Carousel
 // ➤ Generic House Card
-//
 
 // 4-dars
 // ➤ Netlify, redirect bug fixed
@@ -38,16 +37,56 @@
 // ➤ place to center
 // ➤ Change flex to grid
 
-//
+// 6-dars
+// ➤  Filter completed
+// ➤  Create Select for category
+// ➤  Antd debugging
+// ➤  Properties page completed
 
 // 7-dars
-// fix private rou te
-// ➤ formik
-// ➤ yup
+// ➤ Recomanded
+// ➤ Carousel bug fixed
+// ➤ React-slick
+// ➤ Why Choose Us - component
+// ➤ Footer
+// ➤ Selecting single item
+
+// 8-dars
+// ➤ Signin
+// ➤ Add feature to generic button and input
+// ➤ update useRequst custom hooks
+
+// 9-dars
+// ➤ Signin bug fixed
+// ➤ All other bugs reviewed
+// ➤ Properties page finished
+// ➤ Token saqalashdagi hatoliklar
+// ➤ Backendga qaysi hollarda muammolarni aytsa bo'ladi
+// ➤ Single Itemode  page
 
 // 10-dars
-// Deploy
-// Image gallery
+// ➤ details page finished
+// ➤ react-yandex-maps
+
+// 11-dars
+// ➤ Deploy
+// ➤ GitHub Project section intro
+// ➤ Favourite page completed
+// ➤ Like and Dislike implemented
+// ➤ React-Query
+// ➤ useQuery(dep, fetch, response)
+// ➤ contextAPI implemented
+// ➤ Navbar register button fixed
+// ➤ Register Tabs => signin, signup
+// ➤ SignUp
+
+// 12-dars
+// ➤ My Profile page
+// ➤ Add house UI
+// ➤ Edit house UI
+// ➤ Formik
+// ➤
+//
 
 // BUGS
 // house card height
@@ -56,8 +95,6 @@
 // Yandex map -> Placemarker
 
 // Feature
+// Image gallery
 // Private Route & useRequest
-// Register
-// Favourites
-// Edit house
-// Add house
+// Loader
