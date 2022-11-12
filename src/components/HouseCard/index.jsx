@@ -6,7 +6,6 @@ import { PropertiesContext } from "../../context/properties";
 
 export const HouseCard = ({ data = {}, gap, onClick }) => {
   const [state] = useContext(PropertiesContext);
-  console.log(state, "state");
   const {
     attachments,
     salePrice,

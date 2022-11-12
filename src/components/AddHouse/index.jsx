@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import { Wrapper, MenuWrapper, Section, SelectAnt, IconDelete } from "./style";
 import { useState } from "react";
@@ -36,14 +37,14 @@ export const AddNewHouse = () => {
         setImgs(res?.data?.attachments);
         setInitail({ ...res?.data });
       });
-  }, [id, request]);
+  }, []);
 
   // category
   useEffect(() => {
     request({ url: `/categories/list` }).then((res) =>
       setCategory(res?.data || [])
     );
-  }, [request]);
+  }, []);
 
   const formik = useFormik({
     initialValues: initial,
@@ -68,13 +69,11 @@ export const AddNewHouse = () => {
   });
 
   const addImg = () => {
-    if (!(imgs.length >= 4) && img) {
-      setImgs([
-        ...imgs,
-        { imgPath: img, id: `${img.length * Math.random()}${img}$` },
-      ]);
-      setImg("");
-    }
+    setImgs([
+      ...imgs,
+      { imgPath: img, id: `${img.length * Math.random()}${img}$` },
+    ]);
+    setImg("");
   };
   console.log(initial, "rrrrres");
 
@@ -203,11 +202,7 @@ export const AddNewHouse = () => {
               onChange={({ target: { value } }) => setImg(value)}
               placeholder="Add Image URL"
             />{" "}
-            <Button
-              type={"button"}
-              onClick={addImg}
-              disabled={imgs.length >= 4}
-            >
+            <Button type={"button"} onClick={addImg}>
               Add Image URL
             </Button>
           </Section>

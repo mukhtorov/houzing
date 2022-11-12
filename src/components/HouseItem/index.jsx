@@ -5,12 +5,17 @@ import { useParams } from "react-router-dom";
 import { Input, Button } from "../Generic";
 import Recent from "../Recent";
 import nouser from "../../assets/img/nouser.jpeg";
+import noimg from "../../assets/img/noimg.jpeg";
+
 import {
+  Blur,
   Container,
   Content,
   Description,
   Details,
   Icons,
+  ImageContainer,
+  ImgContainer,
   Section,
   User,
   Wrapper,
@@ -35,8 +40,38 @@ export const HouseItem = () => {
       });
   }, [params?.id]);
 
+  console.log(data, "daatat");
+
+  // const [firstImg] = data?.attachments;
   return (
     <React.Fragment>
+      <ImageContainer>
+        <ImageContainer.Main
+          src={(data?.attachments && data?.attachments[0]?.imgPath) || noimg}
+          alt="test"
+        />
+        <ImgContainer>
+          {data?.attachments &&
+            data?.attachments?.slice(1, 5).map((value, index) => {
+              return data?.attachments?.length > 5 && index === 3 ? (
+                <Blur.Container>
+                  <ImageContainer.Subimg
+                    key={value.id}
+                    src={value?.imgPath}
+                    alt="test"
+                  />
+                  <Blur>+{data?.attachments?.length - 5}</Blur>
+                </Blur.Container>
+              ) : (
+                <ImageContainer.Subimg
+                  key={value.id}
+                  src={value?.imgPath}
+                  alt="test"
+                />
+              );
+            })}
+        </ImgContainer>
+      </ImageContainer>
       <Wrapper>
         <Container flex={3}>
           <Section>
